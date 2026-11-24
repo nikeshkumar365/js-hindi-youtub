@@ -1,5 +1,7 @@
 // # primitive
 
+const { useInsertionEffect } = require("react");
+
 // 7 types : String, Number, Boolean, Null, Undefined, Symbol, BigInt
 
 // const score = (undefined) 100
@@ -31,3 +33,28 @@ const myFunction = function(){
 }
 
 console.log(typeof scoreValue);
+
+
+// ++++++++++++++++++++++++++++++++++Memmory
+
+// Stack (Primitive), Heap (Non-Primitive)
+
+let myYoutubename = "nikeshkumar.com"
+
+let anothername = myYoutubename
+anothername = "nexaworrier"
+
+console.log(myYoutubename)
+console.log(anothername);
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "nikeshkumar23021@gmail.com"
+
+console.log(userOne.email);
+console.log(userTwo.email);
